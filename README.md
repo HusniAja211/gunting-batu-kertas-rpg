@@ -62,7 +62,7 @@ http://localhost:8000/
 
 ## 👨‍💻 Teknologi yang Digunakan  
 - **Frontend**: HTML, JavaScript  
-- **Backend**: PHP  
+- **Backend**: PHP, JavaScript
 - **Library**: TailwindCSS  
 
 ## 📜 Lisensi  
