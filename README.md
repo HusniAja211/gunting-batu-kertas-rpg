@@ -1,5 +1,4 @@
-Pemain harus menjalankannya di server seperti **Apache** atau **Nginx**. Berikut adalah revisi README agar lebih jelas:  
-
+Pemain harus menjalankannya di server seperti **Apache** atau **Nginx**. 
 ---
 
 # Batu, Kertas, Gunting - AI Level System 🎮  
