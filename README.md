@@ -1,4 +1,4 @@
-Kalau proyek ini menggunakan PHP, maka pemain harus menjalankannya di server seperti **Apache** atau **Nginx**. Berikut adalah revisi README agar lebih jelas:  
+Pemain harus menjalankannya di server seperti **Apache** atau **Nginx**. Berikut adalah revisi README agar lebih jelas:  
 
 ---
 
