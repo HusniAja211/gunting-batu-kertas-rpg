@@ -22,7 +22,7 @@ updateTampilan();
  */
 function main(pilihanPengguna) {
     if (nyawa <= 0) {
-        alert("Game Over! Coba lagi.");
+        tampilkanPesan("Game Over! Coba lagi.");
         return;
     }
 
@@ -41,12 +41,25 @@ function main(pilihanPengguna) {
 
     // Menentukan hasil ronde
     let hasil = cekPemenang(pilihanPengguna, pilihanBot);
-    alert(hasil);
-    
+
+    // Tampilkan hasil setelah delay
+    setTimeout(() => {
+        tampilkanPesan(hasil);
+    }, 1000);  // Menunda selama 1 detik
+
     // Memperbarui tampilan dan mengecek apakah ada perubahan level atau nyawa
     updateTampilan();
     cekLevelAtauNyawa();
     resetGambar();
+}
+
+/**
+ * Menampilkan pesan di elemen hasilPesan.
+ * @param {string} pesan - Pesan yang akan ditampilkan
+ */
+function tampilkanPesan(pesan) {
+    const hasilElement = document.getElementById("hasilPesan");
+    hasilElement.innerText = pesan;
 }
 
 /**
@@ -88,19 +101,19 @@ function cekLevelAtauNyawa() {
     if (skorPengguna >= skorPerLevel) {
         if (botLevel < maxBotLevel) {
             botLevel++;
-            alert(`Level Up! 🚀\nSekarang kamu berada di Level ${botLevel}`);
+            tampilkanPesan(`Level Up! 🚀\nSekarang kamu berada di Level ${botLevel}`);
         } else {
-            alert("Selamat! 🎉 Kamu mengalahkan semua bot!");
+            tampilkanPesan("Selamat! 🎉 Kamu mengalahkan semua bot!");
             resetGame();
             return;
         }
         resetSkor();
     } else if (skorBot >= skorPerLevel) {
         nyawa--;
-        alert(`Kamu kalah ronde ini! 😢\nSisa nyawa: ${nyawa}`);
+        tampilkanPesan(`Kamu kalah ronde ini! 😢\nSisa nyawa: ${nyawa}`);
 
         if (nyawa <= 0) {
-            alert("Game Over! Kamu kalah.");
+            tampilkanPesan("Game Over! Kamu kalah.");
             resetGame();
         }
 
