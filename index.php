@@ -33,4 +33,7 @@ include 'layout/nav.php';
     </div>
 </section>
 
+<!-- Elemen untuk menampilkan hasil permainan -->
+<div id="hasilPesan" class="text-white text-xl mt-4 text-center"></div>
+
 <?php include 'layout/footer.php' ?>
