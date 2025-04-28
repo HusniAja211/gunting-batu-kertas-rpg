@@ -8,10 +8,10 @@ include 'layout/nav.php';
 <main class="flex-grow flex items-center justify-center relative">
     <section class="absolute inset-0 flex">
         <article class="w-1/2 h-full flex justify-center items-center bg-gradient-to-r from-green-900/30 to-transparent [clip-path:polygon(0_0,100%_0,80%_100%,0%_100%)]">
-            <img id="pilihanPengguna" src="asset/batu.png" alt="Pilihan Pengguna" class="w-40 h-40 rotate-90">
+            <img id="pilihanPengguna" src="asset/batu.png" alt="Pilihan Pengguna" class="w-40 h-40 rotate-89">
         </article>
         <article class="w-1/2 h-full flex justify-center items-center bg-gradient-to-l from-red-900/30 to-transparent [clip-path:polygon(20%_0,100%_0,100%_100%,0_100%)]">
-            <img id="pilihanBot" src="asset/batu.png" alt="Pilihan Bot" class="w-40 h-40 -rotate-90">
+            <img id="pilihanBot" src="asset/batu.png" alt="Pilihan Bot" class="w-40 h-40 -rotate-89">
         </article>
     </section>
     <div class="relative text-white text-center text-4xl font-bold z-10">

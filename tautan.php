@@ -10,7 +10,5 @@ include 'layout/nav.php';
     <div id="kredit-container" class="w-full max-w-2xl grid gap-4"></div>
 
 </main>
-
 <script src="kredit.js"></script>
-
 <?php include 'layout/footer.php'; ?>
