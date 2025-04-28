@@ -54,13 +54,24 @@ function main(pilihanPengguna) {
 }
 
 /**
- * Menampilkan pesan di elemen hasilPesan.
+ * Menampilkan pesan di elemen hasilPesan seperti alert custom.
  * @param {string} pesan - Pesan yang akan ditampilkan
  */
 function tampilkanPesan(pesan) {
     const hasilElement = document.getElementById("hasilPesan");
-    hasilElement.innerText = pesan;
+    const pesanElement = document.getElementById("pesanAlert");
+    pesanElement.innerText = pesan;
+    hasilElement.classList.add("visible");  // Menampilkan alert
 }
+
+/**
+ * Menutup alert ketika tombol "Oke" ditekan.
+ */
+function tutupAlert() {
+    const hasilElement = document.getElementById("hasilPesan");
+    hasilElement.classList.remove("visible");  // Menyembunyikan alert
+}
+
 
 /**
  * Mengembalikan pilihan yang dapat mengalahkan pilihan pengguna.

@@ -34,6 +34,8 @@ include 'layout/nav.php';
 </section>
 
 <!-- Elemen untuk menampilkan hasil permainan -->
-<div id="hasilPesan" class="text-white text-xl mt-4 text-center"></div>
-
+<div id="hasilPesan" class="alert hidden text-white text-xl mt-4 text-center p-4 rounded-lg">
+    <p id="pesanAlert">Pesan Hasil</p>
+    <button onclick="tutupAlert()" class="mt-4 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-500">Oke</button>
+</div>
 <?php include 'layout/footer.php' ?>
